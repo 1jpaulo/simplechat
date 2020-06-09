@@ -8,3 +8,6 @@
         die();
     }
 ?>
+
+<h1> Hello, <?php echo $_SESSION["name"]; ?> </h1>
+<a href="logout.php">Log out.</a>

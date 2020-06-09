@@ -59,7 +59,7 @@
 
         }else{
             // error message
-            echo "Username or password fields cannot be blank.";
+            echo "Username or password fields cannot be empty.";
         }
     }
 ?>
@@ -67,7 +67,11 @@
 <form action="login.php" method="POST">
     <label>User:</label><br>
     <input type="text" name="user"><br>
+    
     <label>Password:</label><br>
     <input type="password" name="password"><br><br>
+    
     <input type="submit" value="Login">
+    
+    <p>Doesn't have an account?</p><a href="register.php"> Sign in.</a>
 </form>
